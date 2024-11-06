@@ -334,4 +334,160 @@ print(numpy.mean(data, axis=1))
      5.95  6.275 5.7   6.1   6.825 5.975 6.725 5.7   6.25  6.4   7.05  5.9  ]
 
 
+## Storing Values in Lists
+This section showed us how to store values in lists so that it can be used later.
 
+```python
+odds=[1,3,5,7]
+print('odds are:', odds)
+```
+
+    odds are: [1, 3, 5, 7]
+
+
+
+```python
+print('first element;', odds[0])
+print('last element;', odds[3])
+print('"-1" element;', odds[-1])
+```
+
+    first element; 1
+    last element; 7
+    "-1" element; 7
+
+
+
+```python
+#typo in darwins name
+names = ['curie', 'darwing','turing']
+print('names is originally:', names)
+names[1] = 'darwin' #corrected name
+print('final value of names:',names)
+```
+
+    names is originally: ['curie', 'darwing', 'turing']
+    final value of names: ['curie', 'darwin', 'turing']
+
+
+
+```python
+name = 'Darwin'
+
+```
+
+
+```python
+odds.append(11)
+print('odds after adding a value:', odds)
+```
+
+    odds after adding a value: [1, 3, 5, 7, 11]
+
+
+
+```python
+removed_element= odds.pop(0) 
+print('odds after removing the first element:', odds)
+print('Removed_element:', removed_element)
+```
+
+    odds after removing the first element: [3, 5, 7, 11]
+    Removed_element: 1
+
+
+
+```python
+odds.reverse()
+print('Odds after Reversing:',odds)
+```
+
+    Odds after Reversing: [11, 7, 5, 3]
+
+
+
+```python
+odds=[3,5,7]
+primes=odds
+primes.append(2)
+print ('Primes:',primes)
+print('odds:',odds)
+```
+
+    Primes: [3, 5, 7, 2]
+    odds: [3, 5, 7, 2]
+
+
+
+```python
+odds=[3,5,7]
+primes= list(odds)
+primes.append(2)
+print('primes:',primes)
+print('odds:', odds)
+```
+
+    primes: [3, 5, 7, 2]
+    odds: [3, 5, 7]
+
+
+
+```python
+binomial_name="Drosophila Melanogaster"
+group= binomial_name[0:10]
+print('group:',group)
+
+species= binomial_name[11:23]
+print('Species:',species)
+chromosomes= ['X','Y','2','3','4']
+autosomes= chromosomes[2:5]
+print('autosomes:',autosomes)
+
+last=chromosomes[-1]
+print('last:',last)
+```
+
+    group: Drosophila
+    Species: Melanogaster
+    autosomes: ['2', '3', '4']
+    last: 4
+
+
+
+```python
+ date= 'Tuesday November 5, 2024'
+day= date[0:7]
+print('Using 0 to begin range today:',day)
+day=date[:7]
+print('omitting beginning index:',day)
+
+```
+
+    Using 0 to begin range today: Tuesday
+    omitting beginning index: Tuesday
+
+
+
+```python
+months=['january','february','march','april','may','june','july','august','september','october','november','december']
+sond= months[8:12]
+print('With known last position:',sond)
+
+sond=months[8:len(months)]
+print('Using length to get last entry;',sond)
+sond=months[8:]
+print("Omitting ending index:",sond)
+```
+
+    With known last position: ['september', 'october', 'november', 'december']
+    Using length to get last entry; ['september', 'october', 'november', 'december']
+    Omitting ending index: ['september', 'october', 'november', 'december']
+
+
+
+```python
+ 
+```
+## Using Loops
+
+This section showed us how loops work in python coding.
