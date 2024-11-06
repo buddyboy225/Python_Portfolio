@@ -1,7 +1,132 @@
 # Python_Portfolio_Thompson
 This is the Portfolio of Python Code I learned during BISC-450C
 
-# Analyzing Patient Data
+## Python Fundamentals
+This was an inital introduction on how python coding really worked.
+```python
+#Any python interpreter can be used as a calculator
+4*2+12
+```
+
+
+
+
+    20
+
+
+
+
+```python
+# Lets save a value to a variable
+weight_kg= 69
+```
+
+
+```python
+print(weight_kg)
+```
+
+    69
+
+
+
+```python
+#Weight0= valid
+#0Weight= invalid
+#weight and Weight are different
+
+```
+
+
+```python
+# Types of Data
+# There are three common types of data
+# Interger Numbers
+# Floating Point numbers
+# strings
+
+```
+
+
+```python
+#floating
+weight_kg = 60.3
+
+```
+
+
+```python
+ #string
+patient_id = '001'
+```
+
+
+```python
+#use varibale in python
+weight_lb = 25 * weight_kg
+print(weight_lb)
+```
+
+    1507.5
+
+
+
+```python
+#add prefix to patient ID
+patient_id = 'inflam_' + patient_id
+print(patient_id)
+```
+
+    inflam_001
+
+
+
+```python
+# combining print statements
+print(patient_id, 'weight in kilograms:',weight_kg)
+```
+
+    inflam_001 weight in kilograms: 60.3
+
+
+
+```python
+# function inception
+
+print(type(60.3))
+print(type(patient_id))
+```
+
+    <class 'float'>
+    <class 'str'>
+
+
+
+```python
+# calculations inside print function
+print('weight in kg', 4.2 * weight_kg )
+```
+
+    weight in kg 253.26
+
+
+
+```python
+weight_kg = 32
+print('weight in kilograms is now:', weight_kg)
+```
+
+    weight in kilograms is now: 32
+
+
+
+```python
+
+```
+
+
+
+## Analyzing Patient Data
 
 In this analysis we looked at inflammation data for multiple patients.
 
