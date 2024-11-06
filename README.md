@@ -699,3 +699,144 @@ for filenames in filenames:
 ```python
 
 ```
+
+## Making Choices
+
+This section is an example of using python code to see how data can give different responses.
+
+```python
+num=37
+if num > 100:
+    print ('greater:')
+else:
+    print('not greater:')
+print('done meow')
+
+```
+
+    not greater:
+    done meow
+
+
+
+```python
+num=53
+print('before conditional...')
+if num > 100:
+    print(num, 'is greater than 100')
+    
+    
+print('...after conditional')
+```
+
+    before conditional...
+    ...after conditional
+
+
+
+```python
+num=-3
+
+if num > 0:
+    print(num, 'is positive ')
+elif num == 0:
+    print(num, 'is zero')
+else:
+    print(num,'is negative innit')
+```
+
+    -3 is negative innit
+
+
+
+```python
+if (1>0) and (-1 >= 0):
+    print('both parts are true')
+else:
+    print('at least one part is false')
+```
+
+    at least one part is false
+
+
+
+```python
+if (1>0) or (-1 >= 0):
+    print('at least one am are true')
+else:
+    print('both em is false')
+```
+
+    at least one am are true
+
+
+
+```python
+import numpy
+```
+
+
+```python
+
+```
+
+```python
+import numpy
+```
+
+
+```python
+data=numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+```
+
+
+```python
+max_inflammation_0 = numpy.amax(data, axis = 0)[0]
+```
+
+
+```python
+max_inflammation_20 = numpy.amax(data, axis = 0)[20]
+
+if max_inflammation_0 == 0 and max_inflammation_20 ==0:
+    print('Suspicious looking maxima!')
+
+elif numpy.sum(numpy.amin(data,axis=0))==0:
+    print('minima add up to zero!' )
+    
+else:
+    print('seems ok to me innit')
+```
+
+    seems ok to me innit
+
+
+
+```python
+data=numpy.loadtxt(fname='inflammation-03.csv', delimiter=',')
+
+max_inflammation_0 = numpy.amax(data, axis = 0)[0]
+
+max_inflammation_20 = numpy.amax(data, axis = 0)[20]
+
+if max_inflammation_0 ==0 and max_inflammation_20 ==20:
+    print('suspicious looking maxiuma innit')
+    
+elif numpy.sum(numpy.amin(data,axis=0))==0:
+    print('maxima add up to zero!-> m8 you are healthy' )
+    
+else:
+    print('seems ok if you asked me')
+```
+
+    maxima add up to zero!-> m8 you are healthy
+
+
+
+```python
+
+```
+
+## Functions
+
+This section shows us the way that 
